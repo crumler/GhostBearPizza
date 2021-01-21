@@ -28,9 +28,9 @@ Locations:
 
 	- Noblesville
 	- Indianapolis
-	- Pendleton
-	- Sheridan
-	- Arcadia
+	- Pendleton (Chris Flook)
+	- Kokomo (Cameronloyd03)
+	- Broad Ripple (Peetlesnumber1)
 	- Carmel
 
 Order:

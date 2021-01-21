@@ -31,7 +31,7 @@ Locations:
 	- Pendleton (Chris Flook)
 	- Kokomo (Cameronloyd03)
 	- Broad Ripple (Peetlesnumber1)
-	- Carmel
+	- Carmel (Serge Melki)
 
 Order:
 	Sizes: (8" personal, 10" small, 12" medium, 16" large, 32" Dropship-sized)

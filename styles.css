@@ -40,6 +40,10 @@ header {
     height: 100vh;
 }
 
+section {padding: 80px 0;}
+
+/* NAV BAR */
+
 .nav {
     height: 100px;
     width: 500px;
@@ -194,6 +198,7 @@ header {
     line-height: 145%; */
     padding: 0;
     text-align: center;
+    background-color: #f3f3f3;
 }
 
 .menu-food {
@@ -201,7 +206,7 @@ header {
     width: 100%;
 }
 
-.menu-food h3 {margin: 20px 0;}
+.menu-food h3 {margin: 50px 0;}
 
 .menu-food li {
     display: block;
@@ -248,10 +253,18 @@ header {
 
 .locations {
     text-align: center;
-    padding: 0;
 }
 
 .locations h2 {
     margin: 50px 0;
     text-transform: uppercase;
+}
+
+.location__img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.location__image {
+    padding: 0 20px;
 }

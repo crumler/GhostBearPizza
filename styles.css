@@ -268,3 +268,19 @@ section {padding: 80px 0;}
 .location__image {
     padding: 0 20px;
 }
+
+/* ORDER FORM */
+
+.order {
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8)), url(img/menu-min.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.order h2 {
+    text-transform: uppercase;
+    color: white;
+}

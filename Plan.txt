@@ -1,0 +1,51 @@
+Nav Bar:
+
+	- Company logo (in upper-left area)
+	- Links:
+		- About Us
+		- Menu
+		- Locations
+
+	- Header Button: Order Now
+
+About Us:
+	For years, the Ghost Bear Pizza Founders would get together at their local tabletop gaming store on every Thursday night of the week to play their session of Battletech.  Each week, they would order a cheese pizza from the local restaurant.  However, the Founders were never satisfied with the toppings that the restaurant offered, so they would always cook their own ingredients and add it to the ordered pizza.
+
+	So one night, one of the Founders came up with an idea to have the three of them open up their own pizza restaurant.  There, they would use nothing but the most rare and exotic pizza ingredients and toppings that could be offered.  Extra spicy pepperoni, chorizo, savory pineapple (that's right....SAVORY pineapple).  You name it, they had it.  And that is how the first ever Ghost Bear Pizza was born in Noblesville, IN.
+
+	For the next thirty years, Ghost Bear Pizza built five more restaurants throughout the northern-Indianapolis area.  Along the way, they came up with the idea of building a small section within each of their restaurants where customers could bring in their own ingredients, cook them right there in the store (under proper supervision), and use those ingredients for their own pizza meals that they would order at that restaurant.
+
+(in larger font) Ghost Bear Pizza locations are independently, locally-owned and operated.
+(directly below, in smaller font) All prices are subject to change at any time.  Ghost Bear Pizza is not a registered trademark.  Seriously.  I made it up just for this website!
+
+Specialty Pizzas:
+	- Extra Spicy Pepperoni
+	- Chorizo
+	- Savory Pineapple
+	- "The Alpha Strike" (all three toppings on one pizza)
+
+Locations: 
+
+	- Noblesville
+	- Indianapolis
+	- Pendleton
+	- Sheridan
+	- Arcadia
+	- Carmel
+
+Order:
+	Sizes: (8" personal, 10" small, 12" medium, 16" large, 32" Dropship-sized)
+	Sides:
+		- Breadsticks
+		- Stuffed Breadsticks
+		- Garlic Cheese Bread
+		- Jalapeno Chorizo Poppers
+	Beverages:
+		- Fountain Drinks
+		- 2 Liters
+		- Domestic Beer
+		- Import
+		- Wine
+		- Bottled Water
+
+- Footer

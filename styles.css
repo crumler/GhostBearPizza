@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+
+/* Ghost Bear blue: #2376bc | rgb(35, 118, 188) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #414141;
+    text-rendering: optimizeLegibility;
+}
+
+/* .row{
+    max-width: 1140px;
+    margin: 0 auto;
+} */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8)), url(img/title-header-min.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.nav {
+    height: 100px;
+    width: 500px;
+    float: right;
+}
+
+.nav__bar {
+    flex-grow: 1;
+    align-self: center;
+}
+
+.nav__bar__ul {
+    display: flex;
+    font-weight: 700;
+    list-style: none;
+    /* background-color: blue; */
+    justify-content: space-between;
+    margin-left: 55px;
+    text-transform: uppercase;
+    font-size: 125%;
+}
+
+.nav__bar__ul li a:link,
+.nav__bar__ul li a:visited {
+    text-decoration: none;
+    color: #2376bc;
+    font-size: 90%;
+}
+
+.nav__logo {
+    /* height: 100px; */
+    /* display: block; */
+    /* background-color: red; */
+    width: 100px;
+}
+
+.logo {
+    height: 150px;
+    width: auto;
+    float: left;
+}
+
+.nav_logo img {
+    width: 100%;
+    height: auto;
+}
+
+.header__company-name {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 250%;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -50%);
+}
+
+.header__company-name__content {text-align: center;}
+
+.header__company-name__content a {font-size: 60%;}
+
+.header__company-name__content h1 {
+    margin-bottom: 25px;
+    color: white;
+}
+
+
+/* BUTTON */
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-order {
+    background-color: #2376bc;
+    color: black;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.btn-order::after {
+    background-color: #2376bc;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom .5s ease-out .75s;
+    /* Without the below, the button appears in full for a second before on-load animation begins */
+    animation-fill-mode: backwards;
+}
+
+.section-dash { color: #2376bc}
+
+/* ABOUT US */
+
+.about {
+    max-width: 1140px;
+    text-align: center;
+    margin: 50px auto;
+    line-height: 145%;
+}
+
+.about h2 {margin-bottom: 15px;}
+
+.about_large {font-weight: 700;}
+
+.about_small {font-size: 80%;}
+
+/* MENU */
+
+.menu {
+    max-width: 1140px;
+    text-align: center;
+    margin: 50px auto;
+    line-height: 145%;
+}
+
+.menu-gallery {
+    list-style: none;
+    width: 100%;
+}
+
+.menu-gallery li {
+    display: block;
+    width: 60%;
+}
+
+.menu h2 {margin-bottom: 15px;}
+
+.menu_images {
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    background-color: #2376bc;
+}

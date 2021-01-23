@@ -41,7 +41,6 @@ Order:
 		- Garlic Cheese Bread
 		- Jalapeno Chorizo Poppers
 	Beverages:
-		- Fountain Drinks
 		- 2 Liters
 		- Domestic Beer
 		- Import

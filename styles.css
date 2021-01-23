@@ -308,3 +308,11 @@ form {
 .pizza-type {
     font-size: 75%;
 }
+
+/* FOOTER */
+
+footer {
+    background-color: #123958;
+    color: white;
+    text-align: center;
+}

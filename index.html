@@ -68,26 +68,30 @@
             <span class="section-dash">&mdash;</span> Menu <span class="section-dash">&mdash;</span>
         </h2>
 
-        <ul class="menu-food clearfix">
+        <ul class="menu-food">
             <h3>Pizzas:</h3>
             <li>
                 <figure class="menu-photo">
                     <img src="img/pepperoni-min.jpg" alt="Spicy Pepperoni Pizza" />
+                    <div class="menu-name"><strong>Spicy Pepperoni</strong></div>
                 </figure>
             </li>
             <li>
                 <figure class="menu-photo">
                     <img src="img/chorizo-min.jpg" alt="Chorizo Pizza" />
+                    <div class="menu-name"><strong>Zesty Chorizo</strong></div>
                 </figure>
             </li>
             <li>
                 <figure class="menu-photo">
                     <img src="img/pineapple-min.jpg" alt="Savory Pineapple Pizza" />
+                    <div class="menu-name"><strong>Savory Pineapple</strong></div>
                 </figure>
             </li>
             <li>
                 <figure class="menu-photo">
                     <img src="img/alphastrike-min.jpg" alt="The Alpha Strike" />
+                    <div class="menu-name"><strong>"The Alpha Strike"</strong></div>
                 </figure>
             </li>
         </ul>
@@ -96,21 +100,25 @@
             <li>
                 <figure class="menu-photo">
                     <img src="img/breadsticks-min.jpg" alt="Breadsticks" />
+                    <div class="menu-name"><strong>Breadsticks</strong></div>
                 </figure>
             </li>
             <li>
                 <figure class="menu-photo">
                     <img src="img/stuffedbreadsticks-min.jpg" alt="Stuffed Breadsticks" />
+                    <div class="menu-name"><strong>Stuffed Breadsticks</strong></div>
                 </figure>
             </li>
             <li>
                 <figure class="menu-photo">
                     <img src="img/cheesebread-min.jpeg" alt="Garlic Cheese Bread" />
+                    <div class="menu-name"><strong>Garlic Cheese Bread</strong></div>
                 </figure>
             </li>
             <li>
                 <figure class="menu-photo">
-                    <img src="img/poppers-min.jpg" alt="Chorizo-stuffed Jalopeno Poppers" />
+                    <img src="img/poppers-min.jpg" alt="Chorizo-stuffed Jalapeno Poppers" />
+                    <div class="menu-name"><strong>Chorizo-stuffed Jalapeno Poppers</strong></div>
                 </figure>
             </li>
         </ul>
@@ -146,9 +154,62 @@
             <span class="section-dash">&mdash;</span> Place an order <span class="section-dash">&mdash;</span>
         </h2>
 
-        <form method="GET" class="order-form">
-            <input type="checkbox">
-        </form>
+        <form action="https://formspree.io/f/xknpyvgl" method="POST">
+
+            <br />
+            <h3 class="food-header">Pizzas:</h3>
+
+
+            
+
+                <div class="pizza-container">
+                    <div>
+                        <h4>Size:</h4>
+                        <div>
+                            <select name="size" id="size">
+                                <option value="8">8&#8243; Personal</option>
+                                <option value="10">10&#8243; Small</option>
+                                <option value="12">12&#8243; Medium</option>
+                                <option value="16">16&#8243; Large</option>
+                                <option value="32">32&#8243; Dropship</option>
+                            </select>
+                        </div>
+                        <div>
+                            <h4>Toppings:</h4>
+                        </div>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="pepperoni" name="pizza" value="pepperoni" checked />
+                        <label for="pepperoni" class="pizza-type">Spicy Pepperoni</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="chorizo" name="pizza" value="chorizo" />
+                        <label for="chorizo" class="pizza-type">Zesty Chorizo</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="pineapple" name="pizza" value="pineapple" />
+                        <label for="pineapple" class="pizza-type">Savory Pineapple</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="alpha" name="pizza" value="alpha" />
+                        <label for="alpha" class="pizza-type">"The Alpha Strike"</label>
+                    </div>
+                </div>
+
+            <h3 class="food-header">Appetizers:</h3>
+
+            <!-- <label>
+                Your e-mail:
+                <input type="text" name="_replyto">
+            </label>
+        <label>
+          Special Instructions:
+          <textarea name="message"></textarea>
+        </label>
+      
+        <button type="submit">Order Now</button> -->
+      </form>
     </section>
 </body>
 </html>

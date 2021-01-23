@@ -27,11 +27,6 @@ h3:after {
     margin-top: 10px;
 }
 
-/* .row{
-    max-width: 1140px;
-    margin: 0 auto;
-} */
-
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8)), url(img/title-header-min.jpg);
     background-size: cover;
@@ -59,7 +54,6 @@ section {padding: 80px 0;}
     display: flex;
     font-weight: 700;
     list-style: none;
-    /* background-color: blue; */
     justify-content: space-between;
     margin-left: 55px;
     text-transform: uppercase;
@@ -73,12 +67,7 @@ section {padding: 80px 0;}
     font-size: 90%;
 }
 
-.nav__logo {
-    /* height: 100px; */
-    /* display: block; */
-    /* background-color: red; */
-    width: 100px;
-}
+.nav__logo {width: 100px;}
 
 .logo {
     height: 150px;
@@ -192,10 +181,6 @@ section {padding: 80px 0;}
 /* MENU */
 
 .menu {
-    /* max-width: 1140px;
-    text-align: center;
-    margin: 50px auto;
-    line-height: 145%; */
     padding: 0;
     text-align: center;
     background-color: #f3f3f3;
@@ -225,10 +210,13 @@ section {padding: 80px 0;}
     overflow: hidden;
     background-color: #2376bc;
     margin: auto;
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
 .menu-photo img {
-    opacity: 0.7;
+    opacity: 0.3;
     width: 100%;
     height: auto;
     transform: scale(1.15);
@@ -239,6 +227,16 @@ section {padding: 80px 0;}
     transform: scale(1.03);
     opacity: 1;
 }
+
+.menu-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150%;
+}
+
+.menu-photo img:hover + .menu-name {display: none;}
 
 .clearfix {zoom: 1}
 .clearfix:after {
@@ -256,7 +254,8 @@ section {padding: 80px 0;}
 }
 
 .locations h2 {
-    margin: 50px 0;
+    margin-top: 50px;
+    margin-bottom: 40px;
     text-transform: uppercase;
 }
 
@@ -272,7 +271,6 @@ section {padding: 80px 0;}
 /* ORDER FORM */
 
 .order {
-    text-align: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8)), url(img/menu-min.jpg);
     background-size: cover;
     background-position: center;
@@ -283,4 +281,30 @@ section {padding: 80px 0;}
 .order h2 {
     text-transform: uppercase;
     color: white;
+    text-align: center;
+}
+
+form {
+    color: white;
+    margin-top: 50px;
+}
+
+.food-header {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+.pizza-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 250px;
+    background-color: rgba(17, 17, 17, 0.055);
+}
+
+.pizza-container select {margin-bottom: 20px;}
+
+.pizza-type {
+    font-size: 75%;
 }

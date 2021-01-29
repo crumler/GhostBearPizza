@@ -60,6 +60,12 @@ section {padding: 80px 0;}
     font-size: 125%;
 }
 
+.nav__bar__ul ion-icon,
+.nav__bar__ul span {
+    color: #2376bc;
+    font-size: 140%;
+}
+
 .nav__bar__ul li a:link,
 .nav__bar__ul li a:visited {
     text-decoration: none;
@@ -104,7 +110,9 @@ section {padding: 80px 0;}
 /* BUTTON */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+.btn-form-order:link,
+.btn-form-order:visited {
     text-transform: uppercase;
     text-decoration: none;
     padding: 15px 40px;
@@ -115,20 +123,36 @@ section {padding: 80px 0;}
     color: white;
 }
 
-.btn:hover {
+.btn:hover,
+.btn-form-order:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.btn:active {
+.btn:active,
+.btn-form-order:active {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.btn-order {
-    background-color: #2376bc;
-    color: black;
+.btn-form-order {
+    margin-top: 10px;
+    width: 35%;
 }
+
+.btn-order,
+.btn-form-order {
+    background-color: #2376bc;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* .btn-form-order:link,
+.btn-form-order:visited {
+    text-tran
+} */
 
 .btn::after {
     content: "";
@@ -215,6 +239,10 @@ section {padding: 80px 0;}
     color: white;
 }
 
+.order-photo img {
+    width: 60%;
+}
+
 .menu-photo img {
     opacity: 0.3;
     width: 100%;
@@ -247,6 +275,7 @@ section {padding: 80px 0;}
     visibility: hidden;
 }
 
+
 /* LOCATIONS */
 
 .locations {
@@ -278,6 +307,33 @@ section {padding: 80px 0;}
     height: 100vh;
 }
 
+.order-pizza,
+.order-appetizer {
+    display: flex;
+}
+
+.order-pizza-item,
+.order-appetizer-item {
+    text-align: -webkit-center;
+}
+
+.order-photo {
+    /* display: inline-block; */
+    width: 100%;
+    margin: 10px;
+    padding-top: 20px;
+    position: relative;
+    /* text-align: center; */
+    color: white;
+    font-size: 90%;
+}
+
+.order-photo img {
+    display: block;
+    width: 90%;
+    border-radius: 50%;
+}
+
 .order h2 {
     text-transform: uppercase;
     color: white;
@@ -295,11 +351,12 @@ form {
     color: white;
 }
 
-.pizza-container {
+.pizza-container,
+.appetizer-container {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     margin: auto;
-    max-width: 250px;
+    max-width: 1140px;
     background-color: rgba(17, 17, 17, 0.055);
 }
 

@@ -31,6 +31,10 @@
                                 <li>
                                     <a href="#">Locations</a>
                                 </li>
+
+                                <li>
+                                    <ion-icon name="cart-outline"><span>0</span></ion-icon>
+                                </li>
                         </ul>
                     </div>
                 <!-- </div> -->
@@ -159,45 +163,73 @@
             <br />
             <h3 class="food-header">Pizzas:</h3>
 
-
-            
-
                 <div class="pizza-container">
-                    <div>
-                        <h4>Size:</h4>
-                        <div>
-                            <select name="size" id="size">
-                                <option value="8">8&#8243; Personal</option>
-                                <option value="10">10&#8243; Small</option>
-                                <option value="12">12&#8243; Medium</option>
-                                <option value="16">16&#8243; Large</option>
-                                <option value="32">32&#8243; Dropship</option>
-                            </select>
+                    <div class="order-pizza">
+                        <div class="order-pizza-item">
+                            <figure class="order-photo">
+                                <img src="img/pepperoni-min.jpg" alt="Spicy Pepperoni Pizza" />
+                                <div class="order-name">Spicy Pepperoni</div>
+                                <button class="btn-form-order">Add to Cart</button>
+                            </figure>
                         </div>
-                        <div>
-                            <h4>Toppings:</h4>
+                        <div class="order-pizza-item">
+                            <figure class="order-photo">
+                                <img src="img/chorizo-min.jpg" alt="Chorizo Pizza" />
+                                <div class="order-name">Zesty Chorizo</div>
+                                <button class="btn-form-order">Add to Cart</button>
+                            </figure>
                         </div>
-                    </div>
-
-                    <div>
-                        <input type="radio" id="pepperoni" name="pizza" value="pepperoni" checked />
-                        <label for="pepperoni" class="pizza-type">Spicy Pepperoni</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="chorizo" name="pizza" value="chorizo" />
-                        <label for="chorizo" class="pizza-type">Zesty Chorizo</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="pineapple" name="pizza" value="pineapple" />
-                        <label for="pineapple" class="pizza-type">Savory Pineapple</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="alpha" name="pizza" value="alpha" />
-                        <label for="alpha" class="pizza-type">"The Alpha Strike"</label>
+                        <div class="order-pizza-item">
+                            <figure class="order-photo">
+                                <img src="img/pineapple-min.jpg" alt="Savory Pineapple Pizza" />
+                                <div class="order-name">Savory Pineapple</div>
+                                <button class="btn-form-order">Add to Cart</button>
+                            </figure>
+                        </div>
+                        <div class="order-pizza-item">
+                            <figure class="order-photo">
+                                <img src="img/alphastrike-min.jpg" alt="The Alpha Strike" />
+                                <div class="order-name">"The Alpha Strike"</div>
+                                <button class="btn-form-order">Add to Cart</button>
+                            </figure>
+                        </div>
                     </div>
                 </div>
 
             <h3 class="food-header">Appetizers:</h3>
+
+                <div class="appetizer-container">
+                    <div class="order-appetizer">
+                        <div class="order-appetizer-item">
+                            <figure class="order-photo">
+                                <img src="img/breadsticks-min.jpg" alt="Breadsticks" />
+                                <div class="order-name">Breadsticks</div>
+                                <button class="btn-form-order">Add to Cart</button>
+                            </figure>
+                        </div>
+                        <div class="order-appetizer-item">
+                            <figure class="order-photo">
+                                <img src="img/stuffedbreadsticks-min.jpg" alt="Stuffed Breadsticks" />
+                                <div class="order-name">Stuffed Breadsticks</div>
+                                <button class="btn-form-order">Add to Cart</button>
+                            </figure>
+                        </div>
+                        <div class="order-appetizer-item">
+                            <figure class="order-photo">
+                                <img src="img/cheesebread-min.jpeg" alt="Garlic Cheese Bread" />
+                                <div class="order-name">Garlic Cheese Bread</div>
+                                <button class="btn-form-order">Add to Cart</button>
+                            </figure>
+                        </div>
+                        <div class="order-appetizer-item">
+                            <figure class="order-photo">
+                                <img src="img/poppers-min.jpg" alt="Chorizo-stuffed Jalapeno Poppers" />
+                                <div class="order-name">Chorizo-stuffed Jalapeno Poppers</div>
+                                <button class="btn-form-order">Add to Cart</button>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
 
             <!-- <label>
                 Your e-mail:
@@ -215,5 +247,8 @@
     <footer>
         Chris Rumler
     </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>

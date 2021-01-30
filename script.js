@@ -1,6 +1,7 @@
 "use strict";
 
-document.getElementsByClassName("copyright").innerHTML = new Date().getFullYear();
+let copyrightYear = new Date().getFullYear();
+document.querySelector(".copyright").innerHTML = ' | ' + copyrightYear;
 
 let products = [
     {

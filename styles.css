@@ -377,3 +377,6 @@ footer {
     color: white;
     text-align: center;
 }
+
+footer a:link,
+footer a:visited {color: white;}

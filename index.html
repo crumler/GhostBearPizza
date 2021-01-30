@@ -6,6 +6,7 @@
     <meta name="description" content="Ghost Bear Pizza is a fictional pizza restaurant chain with the mission of service only the most exotic ingredients and toppings for their pizza.">
     <!-- <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css"> -->
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="queries.css">
     <title>Welcome to Ghost Bear Pizza</title>
 </head>
 <body>
@@ -72,7 +73,7 @@
             <span class="section-dash">&mdash;</span> Menu <span class="section-dash">&mdash;</span>
         </h2>
 
-        <ul class="menu-food">
+        <ul class="menu-food clearfix">
             <h3>Pizzas:</h3>
             <li>
                 <figure class="menu-photo">
@@ -136,7 +137,6 @@
             <figure class="location__image">
                 <img src="img/noblesvillemini.jpg" alt="Noblesville" />
                 <h4>12345 Kerensky Way<br />Noblesville, IN 46060</h4>
-
             </figure>
             <figure class="location__image">
                 <img src="img/broadripplemini.jpg" alt="Broad Ripple" />
@@ -158,11 +158,8 @@
             <span class="section-dash">&mdash;</span> Place an order <span class="section-dash">&mdash;</span>
         </h2>
 
-        <form action="https://formspree.io/f/xknpyvgl" method="POST">
-
             <br />
             <h3 class="food-header">Pizzas:</h3>
-
                 <div class="pizza-container">
                     <div class="order-pizza">
                         <div class="order-pizza-item">
@@ -231,17 +228,9 @@
                     </div>
                 </div>
 
-            <!-- <label>
-                Your e-mail:
-                <input type="text" name="_replyto">
-            </label>
-        <label>
-          Special Instructions:
-          <textarea name="message"></textarea>
-        </label>
-      
-        <button type="submit">Order Now</button> -->
-      </form>
+                <div class="checkout">
+                    <button class="btn-checkout">Checkout</button>
+                </div>
     </section>
 
     <footer>

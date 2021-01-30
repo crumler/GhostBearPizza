@@ -1,5 +1,7 @@
 "use strict";
 
+document.getElementsByClassName("copyright").innerHTML = new Date().getFullYear();
+
 let products = [
     {
         name: "Spicy Pepperoni Pizza",

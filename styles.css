@@ -472,7 +472,7 @@ footer a:visited {color: white;}
     margin: 0 auto;
     margin-top: 50px;
     padding-bottom: 100px;
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 .products-container ion-icon {
@@ -484,7 +484,7 @@ footer a:visited {color: white;}
 
 .product-header {
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     display: flex;
     border-bottom: 4px solid #2376bc;
     margin: 0 auto;

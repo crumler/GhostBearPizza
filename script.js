@@ -2,7 +2,7 @@
 
 //! Updates Copyright year within Footer section
 let copyrightYear = new Date().getFullYear();
-// document.querySelector('.copyright').innerHTML = ' | ' + copyrightYear;
+document.querySelector('.copyright').innerHTML = ' | ' + copyrightYear;
 
 //! Grabs the "Add to Cart" button
 let carts = document.querySelectorAll('.btn-form-order');
@@ -10,50 +10,50 @@ let carts = document.querySelectorAll('.btn-form-order');
 //! Stores catalog of pizza products for sale
 let products = [
     {
-        name: 'Spicy Pepperoni Pizza',
-        tag: 'pepperoni-min',
+        name: 'Pepperoni',
+        tag: 'pepperoni',
         price: 20,
         inCart: 0
     },
     {
-        name: 'Zesty Chorizo Pizza',
-        tag: 'chorizo-min',
+        name: 'Chorizo',
+        tag: 'chorizo',
         price: 20,
         inCart: 0
     },
     {
-        name: 'Savory Pineapple Pizza',
-        tag: 'pineapple-min',
+        name: 'Pineapple',
+        tag: 'pineapple',
         price: 20,
         inCart: 0
     },
     {
         name: 'The Alpha Strike',
-        tag: 'alphastrike-min',
+        tag: 'alphastrike',
         price: 30,
         inCart: 0
     },
     {
         name: 'Breadsticks',
-        tag: 'breadsticks-min',
+        tag: 'breadsticks',
         price: 5,
         inCart: 0
     },
     {
         name: 'Stuffed Breadsticks',
-        tag: 'stuffedbreadsticks-min',
+        tag: 'stuffedbreadsticks',
         price: 8,
         inCart: 0
     },
     {
-        name: 'Garlic Cheese Bread',
-        tag: 'cheesebread-min',
+        name: 'Garlic Bread',
+        tag: 'cheesebread',
         price: 7,
         inCart: 0
     },
     {
-        name: 'Chorizo Stuffed Jalapeno Poppers',
-        tag: 'poppers-min',
+        name: 'Poppers',
+        tag: 'poppers',
         price: 10,
         inCart: 0
     }
@@ -155,19 +155,19 @@ function displayCart() {
         productContainer.innerHTML = '';
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += `
-            <div class='product'>
-                <ion-icon name='close-circle'></ion-icon>
-                <img src='./img/${item.tag}.jpg' />
-                <span class='cart-item-label'>${item.name}</span>
+            <div class="product">
+                <ion-icon name="close-circle"></ion-icon>
+                <img src="./img/${item.tag}.jpg" />
+                <span class="cart-item-label">${item.name}</span>
             </div>
-            <div class='product-price'>$${item.price}.00</div>
-            <div class='product-quantity'>
-                <ion-icon class='decrease' name='remove-circle'></ion-icon>
+            <div class="product-price">$${item.price}.00</div>
+            <div class="product-quantity">
+                <ion-icon class="decrease" name="remove-circle"></ion-icon>
                 <span>${item.inCart}</span>
 
-                <ion-icon class='increase' name='add-circle'></ion-icon>
+                <ion-icon class="increase" name="add-circle"></ion-icon>
             </div>
-            <div class='product-total'>
+            <div class="product-total">
                 $${item.inCart * item.price}.00
             </div>
             `;
@@ -195,9 +195,9 @@ function deleteButtons() {
     for(let i = 0; i < deleteButtons.length; i++) {
         deleteButtons[i].addEventListener('click', () => {
             productName = deleteButtons[i].parentElement.textContent.toLocaleLowerCase().replace(/ /g,'').trim();
-           
+            console.log(cartItems[productName]);
             localStorage.setItem('cartNumbers', productNumbers - cartItems[productName].inCart);
-            localStorage.setItem('totalCost', cartCost - ( cartItems[productName].price * cartItems[productName].inCart));
+            localStorage.setItem('totalCost', cartCost - (cartItems[productName].price * cartItems[productName].inCart));
 
             delete cartItems[productName];
             localStorage.setItem('productsInCart', JSON.stringify(cartItems));
@@ -222,6 +222,7 @@ function manageQuantity() {
             console.log(currentQuantity);
             currentProduct = decreaseButtons[i].parentElement.previousElementSibling.previousElementSibling.querySelector('span').textContent.toLowerCase().replace(/ /g, '');
             console.log(currentProduct);
+            console.log([currentProduct].inCart)
 
             if (cartItems[currentProduct].inCart > 1) {
                 cartItems[currentProduct].inCart -= 1;
@@ -240,7 +241,7 @@ function manageQuantity() {
             currentProduct = increaseButtons[i].parentElement.previousElementSibling.previousElementSibling.querySelector('span').textContent.toLowerCase().replace(/ /g, '').trim();
             console.log(currentProduct);
 
-
+            console.log(currentProduct.inCart);
             cartItems[currentProduct].inCart += 1;
             cartNumbers(cartItems[currentProduct]);
             totalCost(cartItems[currentProduct]);

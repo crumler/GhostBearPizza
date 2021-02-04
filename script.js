@@ -24,20 +24,20 @@ let carts = document.querySelectorAll('.btn-form-order');
 //! Stores catalog of pizza products for sale
 let products = [
     {
-        name: 'Pepperoni',
-        tag: 'pepperoni',
+        name: 'Spicy Pepperoni',
+        tag: 'spicypepperoni',
         price: 20,
         inCart: 0
     },
     {
-        name: 'Chorizo',
-        tag: 'chorizo',
+        name: 'Zesty Chorizo',
+        tag: 'zestychorizo',
         price: 20,
         inCart: 0
     },
     {
-        name: 'Pineapple',
-        tag: 'pineapple',
+        name: 'Savory Pineapple',
+        tag: 'savorypineapple',
         price: 20,
         inCart: 0
     },
@@ -171,7 +171,7 @@ function displayCart() {
             productContainer.innerHTML += `
             <div class="product">
                 <ion-icon name="close-circle"></ion-icon>
-                <img src="./img/${item.tag}.jpg" />
+                <img src="./img/${item.tag}.jpg"/>
                 <span class="cart-item-label">${item.name}</span>
             </div>
             <div class="product-price">$${item.price}.00</div>
@@ -189,8 +189,8 @@ function displayCart() {
 
         productContainer.innerHTML += `
             <div class='basketTotalContainer'>
-                <h4 class='basketTotalTitle'>Basket Total</h4>
-                <h4 class='basketTotal'>$${cartCost}.00</h4>
+                <h4 class='basket-total-title'>Basket Total</h4>
+                <h4 class='basket-total'>$${cartCost}.00</h4>
             </div>
         `
         deleteButtons();

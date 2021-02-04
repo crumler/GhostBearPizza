@@ -8,6 +8,22 @@
  * --------------------------------------------
  */
 @media all and (min-width: 1024px) and (max-width: 1280px) {
+
+    .about,
+    .menu,
+    .locations,
+    .order {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .nav {float: none;}
+
+    .header__company-name {
+        transform: translate(-30%, -110%);
+    }
+
+    /* .nav__bar__ul {font-size: 80%;} */
     
     .menu-photo {font-size: 80%;}
     
@@ -18,6 +34,30 @@
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
+
+    html,
+    body {
+        font-size: 90%;
+        word-wrap: normal;
+    }
+
+    .nav {float: none;}
+
+    .about,
+    .menu,
+    .locations,
+    .order {
+        width: 89%;
+        overflow: hidden;
+    }
+
+    .about {
+        font-size: 90%;
+    }
+
+    .header__company-name {
+        transform: translate(-17%, -80%);
+    }
     
     .header__company-name__content h1 {font-size: 120%;}
 
@@ -26,24 +66,90 @@
     .location__img-container {flex-wrap: wrap;}
 
     .location__image {padding: 15px;}
+
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
+
+    .cart-nav {justify-content: center;}
+
+    .product,
+    .product-price,
+    .product-quantity,
+    .product-total,
+    .basket-total-title,
+    .basket-total {font-size: 70%;}
+
+    .product img {width: 20%;}
     
     .menu-photo {font-size: 80%;}
     
     .location__img-container {flex-wrap: wrap;}
 
     .location__image {padding: 15px;}
+
+    .btn-cart {
+        width: 100%;
+        font-size: 80%;
+    }
+
+    footer {font-size: 80%;}
 }
 
-@media all and (max-width: 480px) {
+@media all and (min-width: 360px) and (max-width: 480px) {
+    
+    .logo{height: 50px;}
+    .menu-photo {font-size: 60%;}
+
+    header,
+    .about,
+    .menu,
+    .locations,
+    .order {
+        width: 140%;
+        overflow: hidden;
+    }
+    
+    .location__img-container {flex-wrap: wrap;}
+
+    .location__image {padding: 15px;}
+
+    .cart-nav {justify-content: center;}
+
+    .cart-nav h2 {
+        font-size: 90%;
+        margin-bottom: 20px;
+    }
+
+    .product,
+    .product-price,
+    .product-quantity,
+    .product-total,
+    .basket-total-title,
+    .basket-total {font-size: 50%;}
+
+    .product-header {font-size: 80%;}
+
+    .product img {width: 20%;}
     
     .menu-photo {font-size: 80%;}
     
     .location__img-container {flex-wrap: wrap;}
 
     .location__image {padding: 15px;}
+
+    .btn-cart {
+        width: 100%;
+        font-size: 60%;
+        margin: 0;
+    }
+
+    footer {
+        font-size: 60%;
+        line-height: 20px;
+        width: 150%;
+    }
+
 }
 
 

@@ -22,15 +22,15 @@
                     <div class="nav__bar">
                         <ul class="nav__bar__ul">
                                 <li>
-                                    <a href="#">About Us</a>
+                                    <a href="#about">About Us</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">Menu</a>
+                                    <a href="#menu">Menu</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">Locations</a>
+                                    <a href="#locations">Locations</a>
                                 </li>
 
                                 <li class="cart">
@@ -47,12 +47,12 @@
             <div class="header__company-name__content">
             <h1>Ghost Bear Pizza</h1>
 
-            <a href="#" class="btn btn-order">Order Now</a>
+            <a href="#order" class="btn btn-order">Order Now</a>
             </div>
         </div>
     </header>
 
-    <section class="about">
+    <section class="about" id="about">
         <h2><span class="section-dash">&mdash;</span> About Us <span class="section-dash">&mdash;</span></h2>
         <p>
             For years, the Ghost Bear Pizza Founders would get together at their local tabletop gaming store on every Thursday night of the week to play their session of Battletech.  Each week, they would order a cheese pizza from the local restaurant.  However, the Founders were never satisfied with the toppings that the restaurant offered, so they would always cook their own ingredients and add it to the ordered pizza.
@@ -70,7 +70,7 @@
         </p>
     </section>
 
-    <section class="menu">
+    <section class="menu" id="menu">
         <h2>
             <span class="section-dash">&mdash;</span> Menu <span class="section-dash">&mdash;</span>
         </h2>
@@ -97,7 +97,7 @@
             </li>
             <li>
                 <figure class="menu-photo">
-                    <img src="img/alphastrike.jpg" alt="The Alpha Strike" />
+                    <img src="img/thealphastrike.jpg" alt="The Alpha Strike" />
                     <div class="menu-name"><strong>"The Alpha Strike"</strong></div>
                 </figure>
             </li>
@@ -118,7 +118,7 @@
             </li>
             <li>
                 <figure class="menu-photo">
-                    <img src="img/cheesebread.jpg" alt="Garlic Cheese Bread" />
+                    <img src="img/garlicbread.jpg" alt="Garlic Cheese Bread" />
                     <div class="menu-name"><strong>Garlic Cheese Bread</strong></div>
                 </figure>
             </li>
@@ -131,7 +131,7 @@
         </ul>
     </section>
 
-    <section class="locations">
+    <section class="locations" id="locations">
         <h2>
             <span class="section-dash">&mdash;</span> Locations <span class="section-dash">&mdash;</span>
         </h2>
@@ -155,7 +155,7 @@
         </div>
     </section>
 
-    <section class="order">
+    <section class="order" id="order">
         <h2>
             <span class="section-dash">&mdash;</span> Place an order <span class="section-dash">&mdash;</span>
         </h2>
@@ -187,7 +187,7 @@
                         </div>
                         <div class="order-pizza-item">
                             <figure class="order-photo">
-                                <img src="img/alphastrike.jpg" alt="The Alpha Strike" />
+                                <img src="img/thealphastrike.jpg" alt="The Alpha Strike" />
                                 <div class="order-name">"The Alpha Strike"</div>
                                 <button class="btn-form-order">Add to Cart</button>
                             </figure>
@@ -215,7 +215,7 @@
                         </div>
                         <div class="order-appetizer-item">
                             <figure class="order-photo">
-                                <img src="img/cheesebread.jpg" alt="Garlic Cheese Bread" />
+                                <img src="img/garlicbread.jpg" alt="Garlic Cheese Bread" />
                                 <div class="order-name">Garlic Cheese Bread</div>
                                 <button class="btn-form-order">Add to Cart</button>
                             </figure>
@@ -231,16 +231,16 @@
                 </div>
 
                 <div class="checkout">
-                    <button class="btn-checkout">Checkout</button>
+                    <a href="cart.html"><button class="btn-checkout">Checkout</button></a>
                 </div>
     </section>
 
     <footer>
         <p>&copy; Chris Rumler<span class="copyright"></span></p>
-        <ion-icon name="logo-facebook"></ion-icon>
-        <ion-icon name="logo-twitter"></ion-icon>
-        <ion-icon name="logo-instagram"></ion-icon>
-        <p>Please visit my LinkedIn profile: <a href="https://www.linkedin.com/in/chrisrumler/">linkedin.com/in/chrisrumler/</a></p>
+        <a href="https://www.facebook.com" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="https://www.twitter.com" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="https://www.instagram.com" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        <p>Please visit my LinkedIn profile: <a href="https://www.linkedin.com/in/chrisrumler/" target="_blank">linkedin.com/in/chrisrumler/</a></p>
     </footer>
 
     <script src="script.js"></script>

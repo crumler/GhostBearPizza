@@ -15,6 +15,7 @@ body {
     font-size: 20px;
     color: #414141;
     text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
 }
 
 h3:after {
@@ -43,12 +44,15 @@ section {padding: 80px 0;}
     height: 100px;
     width: 500px;
     float: right;
+    overflow: hidden;
 }
 
 .nav__bar {
     flex-grow: 1;
     align-self: center;
 }
+
+
 
 .nav__bar__ul {
     display: flex;
@@ -58,12 +62,14 @@ section {padding: 80px 0;}
     margin-left: 55px;
     text-transform: uppercase;
     font-size: 125%;
+    align-items: center;
 }
 
 .nav__bar__ul ion-icon,
 .nav__bar__ul span {
     color: #2376bc;
-    font-size: 140%;
+    font-size: 100%;
+    padding: 5px;
 }
 
 .nav__bar__ul li a:link,
@@ -71,6 +77,14 @@ section {padding: 80px 0;}
     text-decoration: none;
     color: #2376bc;
     font-size: 90%;
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .nav__logo {width: 100px;}
@@ -108,6 +122,10 @@ section {padding: 80px 0;}
 
 
 /* BUTTON */
+.btn {
+    text-decoration: none;
+    display: inline-block;
+}
 
 .btn:link,
 .btn:visited,
@@ -141,10 +159,10 @@ section {padding: 80px 0;}
     margin-top: 10px;
     width: 35%;
     transition: all .2s;
+    outline: none;
 }
 
 .btn-form-order:hover {
-    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
     background-color: rgba(35, 119, 188, 0.7);
 }
 
@@ -156,11 +174,6 @@ section {padding: 80px 0;}
     border-radius: 20px;
     cursor: pointer;
 }
-
-/* .btn-form-order:link,
-.btn-form-order:visited {
-    text-tran
-} */
 
 .btn::after {
     content: "";
@@ -385,13 +398,13 @@ form {
     font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
     font-size: 125%;
-    width: 15%;
     transition: all .2s;
     cursor: pointer;
     background-color: #2376bc;
     color: white;
     border-radius: 20px;
     transition: all .2s;
+    outline: none;
 }
 
 .btn-checkout:hover {background-color: rgba(35, 119, 188, 0.7);}
@@ -408,15 +421,29 @@ footer {
 footer a:link,
 footer a:visited {color: white;}
 
+.cart-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 /* CART.HTML STYLING */
 .cart-header {
-    background-image: url('img/cart-header.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.8)), url('img/cart-header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 150px;
     position: relative;
     color: white;
+}
+
+.cart-header li a:link,
+.cart-header li a:visited {
+    text-decoration: none;
+    color: #2376bc;
+    font-size: 90%;
+    text-transform: uppercase;
 }
 
 .overlay {
@@ -442,26 +469,30 @@ footer a:visited {color: white;}
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 50px 60px 0 60px;
+    text-transform: uppercase;
+    align-items: center;
 }
+
+.cart-nav ul {color: white;}
 
 .cart-nav li {
     list-style: none;
     display: inline-block;
     padding-right: 10px;
     padding-left: 10px;
+    font-size: 100%;
 }
 
 .cart-nav li span {padding-left: 5px;}
 
 .cart-link {
     padding: 5px;
-    background-color: white;
     text-decoration: none;
 }
 
 .cart ion-icon {
     vertical-align: bottom;
-    font-size: 20px;
+    font-size: 150%;
     padding-right: 5px;
 }
 
@@ -542,3 +573,9 @@ footer a:visited {color: white;}
 .basketTotalTitle {width: 30%;}
 
 .basketTotal {width: 10%;}
+
+.home {text-decoration: none;}
+
+.home a:visited {
+    text-decoration: none;
+}

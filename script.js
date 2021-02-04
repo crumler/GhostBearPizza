@@ -1,5 +1,19 @@
 'use strict';
 
+//! Makes Nav Bar fixed to top when scrolling beyond inital header section
+window.onscroll = function() {fixedNavbar()};
+
+let navBar = document.getElementsByClassName('nav__bar');
+let fixed = navBar.offsetTop;
+
+function fixedNavbar() {
+    if (window.pageYOffset >= fixed) {
+        navBar.classList.add('fixed-nav');
+    } else {
+        navBar.classList.remove('fixed-nav');
+    }
+};
+
 //! Updates Copyright year within Footer section
 let copyrightYear = new Date().getFullYear();
 document.querySelector('.copyright').innerHTML = ' | ' + copyrightYear;
@@ -29,7 +43,7 @@ let products = [
     },
     {
         name: 'The Alpha Strike',
-        tag: 'alphastrike',
+        tag: 'thealphastrike',
         price: 30,
         inCart: 0
     },
@@ -47,7 +61,7 @@ let products = [
     },
     {
         name: 'Garlic Bread',
-        tag: 'cheesebread',
+        tag: 'garlicbread',
         price: 7,
         inCart: 0
     },
@@ -238,6 +252,7 @@ function manageQuantity() {
         increaseButtons[i].addEventListener('click', () => {
             currentQuantity = increaseButtons[i].parentElement.querySelector('span').textContent;
             console.log(currentQuantity);
+            console.log(increaseButtons[i].parentElement.previousElementSibling.previousElementSibling.querySelector('span').textContent.toLowerCase());
             currentProduct = increaseButtons[i].parentElement.previousElementSibling.previousElementSibling.querySelector('span').textContent.toLowerCase().replace(/ /g, '').trim();
             console.log(currentProduct);
 

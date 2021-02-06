@@ -18,10 +18,14 @@
         overflow: hidden;
     }
 
+    .about p {
+        font-size: 80%;
+    }
+
     .nav {float: none;}
 
     .header__company-name {
-        transform: translate(-30%, -110%);
+        transform: translate(-35%, -50%);
     }
 
     /* .nav__bar__ul {font-size: 80%;} */
@@ -48,12 +52,13 @@
     .menu,
     .locations,
     .order {
-        width: 89%;
+        width: 100%;
         overflow: hidden;
     }
 
     .about {
         font-size: 90%;
+        width: 90%;
     }
 
     .header__company-name {
@@ -78,6 +83,8 @@
     .header__company-name {
         transform: translate(-17%, -80%);
     }
+
+    .header__company-name__content h1 {font-size: 95%;}
 
     .cart-nav {justify-content: center;}
 
@@ -105,7 +112,14 @@
 }
 
 @media all and (min-width: 360px) and (max-width: 480px) {
+
+    body {width: 100vw;}
+
+    .header__company-name {
+        transform: translate(-14%, -80%);
+    }
     
+    .header__company-name__content h1 {font-size: 80%;}
     
     .logo{height: 50px;}
     .menu-photo {font-size: 60%;}
@@ -115,7 +129,7 @@
     .menu,
     .locations,
     .order {
-        width: 140%;
+        width: 100%;
         overflow: hidden;
     }
     

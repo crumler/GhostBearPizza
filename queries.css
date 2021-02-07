@@ -9,32 +9,60 @@
  */
 @media all and (min-width: 1024px) and (max-width: 1280px) {
 
-
     .about,
     .menu,
     .locations,
-    .order {
-        width: 100%;
-        overflow: hidden;
-    }
+    .order,
+    .main-footer {width: 100%;}
+
+    .about h2,
+    .menu h2,
+    .locations h2,
+    .order h2 {font-size: 250%;}
+
+    header {height: 97vh;}
 
     .about p {
-        font-size: 80%;
+        margin-top: 50px;
+        font-size: 170%;
+        line-height: 2.5rem;
     }
 
-    .nav {float: none;}
-
-    .header__company-name {
-        transform: translate(-35%, -50%);
+    .nav {
+        float: none;
+        font-size: 180%;
     }
 
-    /* .nav__bar__ul {font-size: 80%;} */
+    .header__company-name__content {
+        transform: translate(-35%, 0%);
+        font-size: 160%;
+    }
     
-    .menu-photo {font-size: 80%;}
+    .menu-name {font-size: 220%;}
+
+    .menu-food h3 {font-size: 170%;}
     
     .location__img-container {flex-wrap: wrap;}
 
     .location__image {padding: 15px;}
+
+    .locations h4 {font-size: 180%;}
+
+    .food-header {font-size: 170%;}
+
+    .order {height: 80vh;}
+
+    .order-name {font-size: 140%;}
+
+    .order-photo {margin: 0 1px;}
+
+    .order-photo img {
+        width: 50%;
+    }
+
+    .main-footer {font-size: 140%;}
+
+    .btn-form-order {font-size: 130%;}
 
 }
 
@@ -46,7 +74,11 @@
         word-wrap: normal;
     }
 
+    header {height: 90vh;}
+
     .nav {float: none;}
+
+    .nav__bar__ul {font-size: 200%;}
 
     .about,
     .menu,
@@ -56,22 +88,52 @@
         overflow: hidden;
     }
 
-    .about {
-        font-size: 90%;
-        width: 90%;
-    }
+    .about h2,
+    .menu h2,
+    .locations h2,
+    .order h2 {font-size: 250%;}
 
-    .header__company-name {
-        transform: translate(-17%, -80%);
+    .header__company-name__content {
+        transform: translate(-35%, 0%);
+        font-size: 150%;
     }
     
     .header__company-name__content h1 {font-size: 120%;}
 
-    .menu-photo {font-size: 60%;}
+    .about {width: 88%;}
+
+    .about p {
+        margin-top: 50px;
+        font-size: 170%;
+        line-height: 2.8rem;
+    }
+
+    .menu-food {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .menu-food h3 {font-size: 170%;}
+
+    .menu-photo {font-size: 90%;}
+
+    .locations h4 {font-size: 170%;}
     
     .location__img-container {flex-wrap: wrap;}
 
     .location__image {padding: 15px;}
+
+    .pizza-container,
+    .appetizer-container {
+        width: 88%;
+        font-size: 125%;
+    }
+
+    .food-header {font-size: 170%;}
+
+    .main-footer {font-size: 140%;}
+
+    .btn-form-order {font-size: 100%;}
 
 }
 
@@ -115,14 +177,14 @@
 
     body {width: 100vw;}
 
-    .header__company-name {
-        transform: translate(-14%, -80%);
+    header {height: 100vh;}
+
+    .header__company-name__content {
+        transform: translate(-15%, -10%);
+        font-size: 80%;
     }
     
     .header__company-name__content h1 {font-size: 80%;}
-    
-    .logo{height: 50px;}
-    .menu-photo {font-size: 60%;}
 
     header,
     .about,
@@ -132,10 +194,37 @@
         width: 100%;
         overflow: hidden;
     }
+
+    .about p {
+        font-size: 80%;
+        word-wrap: break-word;
+    }
+
+    .menu-name {font-size: 80%;}
+
+    .menu-food h3 {font-size: 90%;}
     
     .location__img-container {flex-wrap: wrap;}
 
-    .location__image {padding: 15px;}
+    .location__image {padding: 0;}
+
+    .pizza-container,
+    .appetizer-container {
+        width: 90%;
+        font-size: 60%;
+    }
+
+    .btn-form-order {
+        font-size: 60%;
+        width: 70%;
+    }
+
+    .checkout {font-size: 60%;}
+
+    .main-footer {
+        font-size: 50%;
+        line-height: .8rem;
+    }
 
     .cart-nav {justify-content: center;}
 
@@ -156,6 +245,11 @@
     .product img {width: 20%;}
     
     .menu-photo {font-size: 80%;}
+
+    .locations,
+    .menu,
+    .about,
+    .order {padding: 15px 0;}
     
     .location__img-container {flex-wrap: wrap;}
 
@@ -172,7 +266,6 @@
         line-height: 20px;
         width: 150%;
     }
-
 }
 
 

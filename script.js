@@ -1,5 +1,17 @@
 'use strict';
 
+function squareSum(numbers){
+    let result = 0;
+
+    for (let i = 0; i < numbers.length; i++) {
+      result += (numbers[i] * numbers[i]);
+
+  }
+  console.log(result);
+}
+  squareSum([1, 2, 2]);
+
+
 //! Makes Nav Bar fixed to top when scrolling beyond inital header section
 window.onscroll = function() {fixedNavbar()};
 

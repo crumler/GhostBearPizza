@@ -44,6 +44,22 @@ section {
 
 /* NAV BAR */
 
+.hamburger {
+    position: absolute;
+  /* always keep ham on top of everything */
+  z-index: 1000;
+  top: 20px;
+  right: 20px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  background-color: #2376bc;
+  /* show the menu image */
+  background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+  background-size: 100%;
+}
+
 .nav {
     height: 100px;
     width: 500px;

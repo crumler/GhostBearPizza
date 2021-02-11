@@ -38,6 +38,13 @@ header {
     height: 100vh;
 }
 
+header img {
+    height: 150px;
+    width: auto;
+    float: left;
+    padding-left: 20px;
+}
+
 section {
     padding: 80px 0;
 }
@@ -60,7 +67,7 @@ section {
   background-size: 100%;
 }
 
-.nav {
+/* .nav {
     height: 100px;
     width: 500px;
     overflow: hidden;
@@ -69,13 +76,13 @@ section {
 
 .nav__bar {
     flex-grow: 1;
-}
+} */
 
 .nav__bar__ul {
     display: flex;
     font-weight: 700;
     list-style: none;
-    justify-content: space-between;
+    justify-content: flex-end;
     text-transform: uppercase;
     font-size: 125%;
     align-items: center;
@@ -93,6 +100,7 @@ section {
     text-decoration: none;
     color: #2376bc;
     font-size: 90%;
+    padding: 0 20px;
 }
 
 .fixed-nav {
@@ -103,18 +111,12 @@ section {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-.nav__logo {width: 100px;}
-
-.logo {
-    height: 150px;
-    width: auto;
-    float: left;
-}
+/* .nav__logo {width: 100px;}
 
 .nav_logo img {
     width: 100%;
     height: auto;
-}
+} */
 
 .header__company-name {
     position: absolute;

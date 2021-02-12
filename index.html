@@ -11,39 +11,37 @@
 </head>
 <body>
     <header>
-        <img src="icons/pizza-logo.svg" alt="Company Logo" />
+        <ion-icon name="menu" class="hamburger"></ion-icon>
         <nav>
-            <div class="nav">
-                    <div class="nav__bar">
-                        <!-- <ion-icon name="grid" class="hamburger"></ion-icon> -->
-                        <ul class="nav__bar__ul">
-                                <li>
-                                    <a href="#about">About Us</a>
-                                </li>
+            <div class="nav__bar">
+                <img src="icons/pizza-logo.svg" class="logo" alt="Company Logo" />
+                <ul class="nav__bar__ul">
+                    <li>
+                        <a href="#about" class="menu-link">About Us</a>
+                    </li>
 
-                                <li>
-                                    <a href="#menu">Menu</a>
-                                </li>
+                    <li>
+                        <a href="#menu" class="menu-link">Menu</a>
+                    </li>
 
-                                <li>
-                                    <a href="#locations">Locations</a>
-                                </li>
+                    <li>
+                        <a href="#locations" class="menu-link">Locations</a>
+                    </li>
 
-                                <li class="cart">
-                                    <a href="cart.html">
-                                        <ion-icon name="cart-outline"></ion-icon>:<span>0</span>
-                                    </a>
-                                </li>
-                        </ul>
-                    </div>
+                    <li class="cart">
+                        <a href="cart.html">
+                            <ion-icon name="cart-outline"></ion-icon>:<span>0</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
 
         <div class="header__company-name">
             <div class="header__company-name__content">
                 <h1>Ghost Bear Pizza</h1>
-                <a href="#order" class="btn btn-order">Order Now</a>
             </div>
+            <a href="#order" class="btn btn-order">Order Now</a>
         </div>
 
     </header>

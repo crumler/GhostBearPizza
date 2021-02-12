@@ -26,6 +26,17 @@ function fixedNavbar() {
     }
 };
 
+//! Code for Hamburger nav bar menu toggling
+let navbar = document.querySelector('.nav__bar');
+let hamburger = document.querySelector('.hamburger');
+
+hamburger.addEventListener('click', toggleHamburger);
+
+function toggleHamburger() {
+    navbar.classList.toggle('showNav');
+    hamburger.classList.toggle('showClose');
+};
+
 //! Updates Copyright year within Footer section
 let copyrightYear = new Date().getFullYear();
 document.querySelector('.copyright').innerHTML = ' | ' + copyrightYear;

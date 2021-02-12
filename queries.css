@@ -12,7 +12,6 @@
     body {overflow-x: hidden;}
     
     .header__company-name__content {
-        transform: translate(-15%, 0%);
         font-size: 100%;
     }
 
@@ -32,7 +31,6 @@
     body {overflow-x: hidden;}
 
     .header__company-name__content {
-        transform: translate(-15%, 0%);
         font-size: 100%;
     }
 
@@ -53,7 +51,18 @@
         height: 160vh;
     }
 }
-@media all and (min-width: 1024px) and (max-width: 1279px) {
+
+@media all and (width: 1024px) and (height: 1366px) {
+
+    /* header {height: 100vh;} */
+
+
+    .header__company-name {
+        font-size: 150%;
+    }
+}
+
+@media all and (min-width: 1023px) and (max-width: 1279px) {
 
     .about,
     .menu,
@@ -80,9 +89,10 @@
     }
 
     .header__company-name__content {
-        transform: translate(-15%, 0%);
+        margin: 0 auto;
         font-size: 100%;
     }
+
     
     .menu-name {font-size: 220%;}
 
@@ -120,7 +130,7 @@
         word-wrap: normal;
     }
 
-    header {height: 90vh;}
+    header {height: 100vh;}
 
     .nav {float: none;}
 
@@ -140,7 +150,6 @@
     .order h2 {font-size: 250%;}
 
     .header__company-name__content {
-        transform: translate(-35%, 0%);
         font-size: 150%;
     }
     
@@ -188,10 +197,6 @@
     html,
     body {word-wrap: normal;}
 
-    .header__company-name {
-        transform: translate(-17%, -80%);
-    }
-
     .header__company-name__content h1 {font-size: 95%;}
 
     .cart-nav {justify-content: center;}
@@ -226,7 +231,6 @@
     header {height: 100vh;}
 
     .header__company-name__content {
-        transform: translate(-15%, -10%);
         font-size: 80%;
     }
     
@@ -311,6 +315,45 @@
         font-size: 60%;
         line-height: 20px;
         width: 150%;
+    }
+}
+
+@media all and (width: 280px) and (height: 653px) {
+
+    header,
+    .about,
+    .menu,
+    .locations,
+    .order {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .logo {height: 50px;}
+
+    .header__company-name__content {
+        font-size: 40%;
+    }
+
+    .location__img-container {flex-direction: column;}
+
+    .location__image {
+        padding: 0;
+    }
+
+    .btn-order {
+        width: 50px;
+        font-size: 20%;
+    }
+
+    .btn:link,
+    .btn:visited,
+    .btn-form-order:link,
+    .btn-form-order:visited,
+    .btn-checkout:link,
+    .btn-checkout:visited {
+        padding: 2px 6px;
+        width: 60px;
     }
 }
 

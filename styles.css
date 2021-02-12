@@ -51,38 +51,49 @@ section {
 
 /* NAV BAR */
 
-.hamburger {
-    position: absolute;
-  /* always keep ham on top of everything */
-  z-index: 1000;
-  top: 20px;
-  right: 20px;
-  width: 36px;
-  height: 36px;
-  border: none;
-  cursor: pointer;
-  background-color: #2376bc;
-  /* show the menu image */
-  background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
-  background-size: 100%;
+.logo {
+    width: 90px;
+    height: auto;
+    display: inline;
 }
 
-/* .nav {
-    height: 100px;
-    width: 500px;
-    overflow: hidden;
-    margin: auto;
+.hamburger {
+    display: none;
+    position: absolute;
+    /* always keep ham on top of everything */
+    z-index: 1000;
+    top: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: #2376bc;
+    /* show the menu image */
+    background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+    background-size: 100%;
+}
+
+.showClose {
+    background-color: #2376bc;
+    color: white;
+    cursor: pointer;
 }
 
 .nav__bar {
-    flex-grow: 1;
-} */
+    display: flex;
+    justify-content: space-between;
+    /* height: 100px; */
+    overflow: hidden;
+    margin: auto;
+} 
 
 .nav__bar__ul {
     display: flex;
     font-weight: 700;
     list-style: none;
-    justify-content: flex-end;
+    align-self: flex-start;
     text-transform: uppercase;
     font-size: 125%;
     align-items: center;
@@ -119,18 +130,22 @@ section {
 } */
 
 .header__company-name {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
-    flex-wrap: wrap;
+    min-height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
     font-size: 250%;
+    text-align: center;
     /* width: 1140px; */
-    top: 50%;
-    left: 50%;
-    transform: translate(-35%, -50%);
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-35%, -50%); */
 }
 
 .header__company-name__content {
-    text-align: center;
+    align-self: center;
 }
 
 .header__company-name__content a {font-size: 60%;}
@@ -186,6 +201,11 @@ section {
     background-color: rgba(35, 119, 188, 0.7);
 }
 
+.btn-order {
+    width: 300px;
+    font-size: 70%;
+    align-self: center;
+}
 .btn-order,
 .btn-form-order {
     background-color: #2376bc;
@@ -194,6 +214,8 @@ section {
     border-radius: 20px;
     cursor: pointer;
 }
+
+/* .btn-order {text-align: center;} */
 
 .btn::after {
     content: "";

@@ -327,19 +327,70 @@
     .order {
         width: 100%;
         overflow: hidden;
+        margin: 2px auto;
     }
 
-    .logo {height: 50px;}
+    .about p {
+        font-size: 85%;
+        word-wrap: break-word;
+    }
+
+    .nav__bar__ul {visibility: hidden;}
+
+    .hamburger {display: block;}
+
+    .logo {
+        height: 50px;
+        margin-top: .5rem;
+    }
 
     .header__company-name__content {
         font-size: 40%;
     }
 
-    .location__img-container {flex-direction: column;}
+    .menu-food {display: none;}
+
+    .menu-photo-mobile {
+        display: block;
+    }
+
+    .menu-food-mobile h3 {
+        padding-top: 1.5rem;
+    }
+
+    .menu-photo-mobile figcaption {
+        font-size: 80%;
+        margin: .2rem 0;
+    }
+
+    .menu-photo-mobile img {
+        width: 40%;
+        height: auto;
+        margin-top: 6px;
+    }
+
+    .locations {padding-top: 10px;}
+
+    .location__img-container {
+        flex-direction: column;
+    }
+
+    .location__image h4 {padding: 1rem 0;}
 
     .location__image {
         padding: 0;
     }
+
+    .order h2 {font-size: 120%;}
+
+    .order-pizza,
+    .order-appetizer {
+    flex-direction: column;
+    }
+
+    .order {height: auto;}
+
+    .order-photo img {width: 40%;}
 
     .btn-order {
         width: 50px;
@@ -352,8 +403,13 @@
     .btn-form-order:visited,
     .btn-checkout:link,
     .btn-checkout:visited {
-        padding: 2px 6px;
-        width: 60px;
+        padding: 8px 16px;
+        width: 80px;
+    }
+
+    .main-footer {
+        font-size: 70%;
+        line-height: 25px;
     }
 }
 

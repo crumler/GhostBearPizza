@@ -304,6 +304,10 @@ section {
     color: white;
 }
 
+.menu-photo-mobile {
+    display: none;
+}
+
 .order-photo img {
     width: 60%;
 }

@@ -45,6 +45,11 @@
 
     .location__image img {width: 90%;}
 
+    section {
+        padding: 0;
+        margin: 0;
+    }
+
     .order {
         margin: 0;
         padding: 0;
@@ -52,6 +57,63 @@
     }
 }
 
+/* Surface Duo */
+@media all and (width: 540px) and (height: 720px) {
+    .nav__bar__ul {visibility: hidden;}
+
+    .hamburger {display: block;}
+
+    .menu-food {display: none;}
+
+    .menu-photo-mobile {
+        display: block;
+    }
+
+    .menu-food-mobile h3 {
+        padding-top: 1.5rem;
+    }
+
+    .menu-photo-mobile figcaption {
+        font-size: 80%;
+        margin: .2rem 0;
+    }
+
+    .menu-photo-mobile img {
+        width: 40%;
+        height: auto;
+        margin-top: 6px;
+    }
+
+    .about,
+    .locations {margin: 0;}
+
+    .locations {padding: 0;}
+
+    .about p {
+        font-size: 80%;
+        padding: 0 10px;
+    }
+
+    .btn-order {
+        font-size: 50%;
+    }
+
+    .order {height: 125vh;}
+
+    .btn-form-order {
+        width: 50%;
+    }
+
+    .order-name {
+        font-size: 70%;
+    }
+
+    .main-footer {line-height: 1.2rem;}
+
+    
+}
+
+/* iPad Pro */
 @media all and (width: 1024px) and (height: 1366px) {
 
     /* header {height: 100vh;} */

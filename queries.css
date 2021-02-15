@@ -57,6 +57,35 @@
     }
 }
 
+/* iPhone 6/7/8 Plus */
+@media all and (width: 414px) and (height: 736px) {
+
+    .nav__bar__ul {visibility: hidden;}
+
+    .hamburger {display: block;}
+
+    .menu-food {display: none;}
+
+    .menu-photo-mobile {
+        display: block;
+    }
+
+    .menu-food-mobile h3 {
+        padding-top: 1.5rem;
+    }
+
+    .menu-photo-mobile figcaption {
+        font-size: 80%;
+        margin: .2rem 0;
+    }
+
+    .menu-photo-mobile img {
+        width: 40%;
+        height: auto;
+        margin-top: 6px;
+    }
+    }
+
 /* Surface Duo */
 @media all and (width: 540px) and (height: 720px) {
     .nav__bar__ul {visibility: hidden;}
@@ -205,7 +234,7 @@
     }
 }
 
-/* @media all and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1024px) {
 
     html,
     body {
@@ -273,7 +302,7 @@
 
     .btn-form-order {font-size: 100%;}
 
-} */
+}
 
 @media all and (min-width: 480px) and (max-width: 768px) {
 
@@ -307,9 +336,37 @@
     footer {font-size: 80%;}
 }
 
-@media all and (min-width: 360px) and (max-width: 480px) {
+/* iPhone X */
+@media all and (width: 375px) and (height: 812px)   {
+    .nav__bar__ul {visibility: hidden;}
 
-    body {width: 100vw;}
+    .hamburger {display: block;}
+
+    .menu-food {display: none;}
+
+    .menu-photo-mobile {
+        display: block;
+    }
+
+    .menu-food-mobile h3 {
+        padding-top: 1.5rem;
+    }
+
+    .menu-photo-mobile figcaption {
+        font-size: 80%;
+        margin: .2rem 0;
+    }
+
+    .menu-photo-mobile img {
+        width: 40%;
+        height: auto;
+        margin-top: 6px;
+    }
+}
+
+/* @media all and (min-width: 360px) and (max-width: 480px) {
+
+    body {width: 70vw;}
 
     header {height: 100vh;}
 
@@ -399,8 +456,9 @@
         line-height: 20px;
         width: 150%;
     }
-}
+} */
 
+/* Galaxy Fold */
 @media all and (width: 280px) and (height: 653px) {
 
     header,
@@ -413,9 +471,14 @@
         margin: 2px auto;
     }
 
+    .about,
+    .locations {padding: 10px 0;}
+
     .about p {
-        font-size: 85%;
+        font-size: 65%;
         word-wrap: break-word;
+        padding: 0 5px;
+        line-height: 1.2rem;
     }
 
     .nav__bar__ul {visibility: hidden;}

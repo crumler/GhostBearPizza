@@ -57,8 +57,122 @@
     }
 }
 
+/* iPhone 11 Pro */
+@media all and (width: 375px) and (height: 812px) {
+    .header__company-name__content {
+        font-size: 70%;
+    }
+    
+    .nav__bar__ul {visibility: hidden;}
+
+    .menu-food {display: none;}
+
+    .menu-photo-mobile {
+        display: block;
+    }
+
+    .menu-food-mobile h3 {
+        padding-top: 1.5rem;
+    }
+
+    .menu-photo-mobile figcaption {
+        font-size: 80%;
+        margin: .2rem 0;
+    }
+
+    .menu-photo-mobile img {
+        width: 40%;
+        height: auto;
+        margin-top: 6px;
+    }
+
+    .location__img-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location__image img {
+        width: 80%;
+        height: auto;
+    }
+
+    .order {
+        height: 90vh;
+        width: 105vw;
+        font-size: 60%;
+    }
+
+    .order img {
+        width: 70%;
+        height: auto;
+    }
+
+    .main-footer {
+        width: 105vw;
+        line-height: 1.3rem;
+    }
+}
+
+/* Galaxy Note 20 */
+@media all and (width: 412px) and (height: 915px) {
+
+    .header__company-name__content {
+        font-size: 70%;
+    }
+    
+    .nav__bar__ul {visibility: hidden;}
+
+    .menu-food {display: none;}
+
+    .menu-photo-mobile {
+        display: block;
+    }
+
+    .menu-food-mobile h3 {
+        padding-top: 1.5rem;
+    }
+
+    .menu-photo-mobile figcaption {
+        font-size: 80%;
+        margin: .2rem 0;
+    }
+
+    .menu-photo-mobile img {
+        width: 40%;
+        height: auto;
+        margin-top: 6px;
+    }
+
+    .location__img-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location__image img {
+        width: 60%;
+        height: auto;
+    }
+
+    .order {
+        height: 90vh;
+        width: 102vw;
+        font-size: 60%;
+    }
+
+    .order img {
+        width: 70%;
+        height: auto;
+    }
+
+    .main-footer {
+        width: 102vw;
+        line-height: 1.3rem;
+    }
+}
+
 /* iPhone 11 */
 @media all and (width: 414px) and (height: 896px) {
+
     .header__company-name__content {
         font-size: 70%;
     }

@@ -26,7 +26,7 @@
     .locations {width: 99%;}
 } */
 
-@media all and (min-width: 1280px) and (max-height: 1080px) {
+@media all and (min-width: 1280px) {
 
     body {overflow-x: hidden;}
 
@@ -57,6 +57,62 @@
     }
 }
 
+/* iPhone 11 */
+@media all and (width: 414px) and (height: 896px) {
+    .header__company-name__content {
+        font-size: 70%;
+    }
+    
+    .nav__bar__ul {visibility: hidden;}
+
+    .menu-food {display: none;}
+
+    .menu-photo-mobile {
+        display: block;
+    }
+
+    .menu-food-mobile h3 {
+        padding-top: 1.5rem;
+    }
+
+    .menu-photo-mobile figcaption {
+        font-size: 80%;
+        margin: .2rem 0;
+    }
+
+    .menu-photo-mobile img {
+        width: 40%;
+        height: auto;
+        margin-top: 6px;
+    }
+
+    .location__img-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location__image img {
+        width: 60%;
+        height: auto;
+    }
+
+    .order {
+        height: 90vh;
+        width: 102vw;
+        font-size: 60%;
+    }
+
+    .order img {
+        width: 70%;
+        height: auto;
+    }
+
+    .main-footer {
+        width: 102vw;
+        line-height: 1.3rem;
+    }
+}
+
 /* iPhone 6/7/8 Plus */
 @media all and (width: 414px) and (height: 736px) {
 
@@ -84,7 +140,7 @@
         height: auto;
         margin-top: 6px;
     }
-    }
+}
 
 /* Surface Duo */
 @media all and (width: 540px) and (height: 720px) {

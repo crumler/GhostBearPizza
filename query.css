@@ -77,8 +77,6 @@ and (max-device-width : 480px) {
     .product img {width: 20%;}
     
     .menu-photo {font-size: 80%;}
-    
-    .location__img-container {flex-wrap: wrap;}
 
     .location__image {padding: 1.5rem;}
 
@@ -105,10 +103,63 @@ and (max-width : 320px) {
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-/* Styles */
+@media only screen
+and (min-device-width : 768px) {
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    h2 {margin: .5rem 0;}
+
+    .menu-food {display: none;}
+
+    .menu-food-mobile__container {
+        display: flex;
+        list-style: none;
+    }
+
+    .menu-photo-mobile {
+        display: block;
+        font-size: 80%;
+        word-wrap: break-word;
+    }
+
+    .menu-food-mobile h3 {
+        padding-top: 1.5rem;
+    }
+
+    .menu-photo-mobile figcaption {
+        /* font-size: 80%; */
+        margin: .2rem 0;
+    }
+
+    .menu-photo-mobile img {
+        width: 80%;
+        height: auto;
+        margin-top: .6rem;
+    }
+
+    .order {
+        height: 100%;
+    }
+
+    .order-photo img {
+        width: 60%;
+        height: auto;
+    }
+
+    .btn-form-order {
+        font-size: 1rem;
+    }
+
+    .btn-form-order {font-size: 1.5rem;}
+
+    .main-footer {
+        line-height: 2.5rem;
+    }
 }
 
 /* iPads (landscape) ----------- */

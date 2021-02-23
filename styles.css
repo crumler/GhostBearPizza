@@ -20,6 +20,8 @@ body {
     /* overflow-x: hidden; */
 }
 
+h4 {padding: 1rem 0;}
+
 h3:after {
     display: block;
     height: .2rem;
@@ -282,7 +284,11 @@ section {
     width: 100%;
 }
 
-.menu-food h3 {margin: 5rem 0;}
+.menu-food-mobile {display: none;}
+
+.menu-photo-mobile img {border-radius: 2rem;}
+
+h3 {margin: 5rem 0;}
 
 .menu-food li {
     display: block;
@@ -364,11 +370,14 @@ section {
 .location__img-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .location__image {
     padding: 0 2rem;
 }
+
+.location__image img {border-radius: 2rem;}
 
 /* ORDER FORM */
 

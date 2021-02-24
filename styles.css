@@ -59,24 +59,6 @@ section {
     display: inline;
 }
 
-.hamburger {
-    display: none;
-    position: absolute;
-    /* always keep ham on top of everything */
-    z-index: 1000;
-    top: 2rem;
-    right: 2rem;
-    width: 3.6rem;
-    height: 3.6rem;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    color: #2376bc;
-    /* show the menu image */
-    background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
-    background-size: 100%;
-}
-
 .showClose {
     background-color: #2376bc;
     color: white;

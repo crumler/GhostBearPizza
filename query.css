@@ -1,4 +1,98 @@
 /* Smartphones (portrait and landscape) ----------- */
+
+@media only all
+and (min-width:280px) and (max-width:480) {
+
+    html,
+    body {
+        word-wrap: normal;
+        font-size: 60%;
+    }
+
+    h2 {font-size: 125%;}
+
+    h3 {margin: 2rem 0;}
+
+    section {
+        padding: 3rem 0;
+    }
+
+    .nav__bar__ul {visibility: hidden;}
+
+    .menu-food {display: none;}
+
+    .menu-photo-mobile {
+        display: block;
+    }
+
+    .menu-food-mobile h3 {
+        padding-top: 1rem;
+    }
+
+    .menu-photo-mobile figcaption {
+        /* font-size: 80%; */
+        margin: .2rem 0;
+    }
+
+    .menu-photo-mobile img {
+        width: 40%;
+        height: auto;
+        margin-top: 6px;
+    }
+
+    header {height: 100%;}
+
+    .header__company-name__content h1 {font-size: 95%;}
+
+    .order {
+        height: 100%;
+        text-align: center;
+    }
+
+    .order-pizza,
+    .order-appetizer {
+        flex-direction: column;
+    }
+
+    .order-photo img {
+        width: 40%;
+        height: auto;
+    }
+
+    .btn-form-order {
+        font-size: 1.5rem;
+    }
+
+    .main-footer {
+        /* font-size: 1.5rem; */
+        line-height: 2.5rem;
+    }
+
+    .cart-nav {justify-content: center;}
+
+    .product,
+    .product-price,
+    .product-quantity,
+    .product-total,
+    .basket-total-title,
+    .basket-total {font-size: 70%;}
+
+    .product img {width: 20%;}
+    
+    .menu-photo {font-size: 80%;}
+
+    .location__image {padding: 1.5rem;}
+
+    .location__image img {width: 80%;}
+
+    .btn-cart {
+        width: 100%;
+        font-size: 80%;
+    }
+
+    footer {font-size: 80%;}
+}
+
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
@@ -13,8 +107,6 @@ and (max-device-width : 480px) {
     }
 
     .nav__bar__ul {visibility: hidden;}
-
-    .hamburger {display: block;}
 
     .menu-food {display: none;}
 
@@ -90,6 +182,65 @@ and (max-device-width : 480px) {
     footer {font-size: 80%;}
 }
 
+@media only all 
+and (min-width: 481px) 
+and (max-width: 768px) {
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    h2 {margin: .5rem 0;}
+
+    .menu-food {display: none;}
+
+    .menu-food-mobile__container {
+        display: flex;
+        list-style: none;
+    }
+
+    .menu-photo-mobile {
+        display: block;
+        font-size: 80%;
+        word-wrap: break-word;
+    }
+
+    .menu-food-mobile h3 {
+        padding-top: 1.5rem;
+    }
+
+    .menu-photo-mobile figcaption {
+        /* font-size: 80%; */
+        margin: .2rem 0;
+    }
+
+    .menu-photo-mobile img {
+        width: 80%;
+        height: auto;
+        margin-top: .6rem;
+    }
+
+    .order {
+        height: 100%;
+    }
+
+    .order-photo img {
+        width: 60%;
+        height: auto;
+    }
+
+    .btn-form-order {
+        font-size: 1rem;
+    }
+
+    .btn-form-order {font-size: 1.5rem;}
+
+    .main-footer {
+        line-height: 2.5rem;
+    }
+}
+
 /* Smartphones (landscape) ----------- */
 @media only screen 
 and (min-width : 321px) {
@@ -103,8 +254,8 @@ and (max-width : 320px) {
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 768px) {
+@media only all
+and (min-width : 768px) and (max-width : 1024px) {
 
     html,
     body {
@@ -162,37 +313,7 @@ and (min-device-width : 768px) {
     }
 }
 
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-/* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-/* Styles */
-}
-
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-/* Styles */
-}
-
-/* Large screens ----------- */
-@media only screen 
-and (min-width : 1824px) {
-/* Styles */
-}
-
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-/* Styles */
+@media only all
+and (min-width : 1025px) {
+    
 }

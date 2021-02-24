@@ -315,5 +315,30 @@ and (min-width : 768px) and (max-width : 1024px) {
 
 @media only all
 and (min-width : 1025px) {
-    
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    h2 {margin: .5rem 0;}
+
+    .order {
+        height: 100%;
+    }
+
+    .order-photo img {
+        width: 60%;
+        height: auto;
+    }
+
+    .btn-form-order {
+        font-size: 1rem;
+    }
+
+    .btn-form-order {font-size: 1.5rem;}
+
+    .main-footer {
+        line-height: 2.5rem;
+    }
 }

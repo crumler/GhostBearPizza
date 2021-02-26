@@ -1,7 +1,7 @@
 /* Smartphones (portrait and landscape) ----------- */
 
 @media only all
-and (min-width:280px) and (max-width:480) {
+and (min-width:280px) and (max-width:320px) {
 
     html,
     body {
@@ -75,7 +75,7 @@ and (min-width:280px) and (max-width:480) {
     .product-quantity,
     .product-total,
     .basket-total-title,
-    .basket-total {font-size: 70%;}
+    .basket-total {font-size: 140%;}
 
     .product img {width: 20%;}
     
@@ -91,6 +91,23 @@ and (min-width:280px) and (max-width:480) {
     }
 
     footer {font-size: 80%;}
+
+    .cart-nav h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .product-header h5,
+    .cart-item-label {font-size: 1rem;}
+
+    .products-container ion-icon {font-size: 1.5rem;}
+
+    .cart-footer {
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+
+    .home {font-size: 2rem;}
 }
 
 @media only screen 
@@ -164,7 +181,7 @@ and (max-device-width : 480px) {
     .product-quantity,
     .product-total,
     .basket-total-title,
-    .basket-total {font-size: 70%;}
+    .basket-total {font-size: 170%;}
 
     .product img {width: 20%;}
     
@@ -180,6 +197,23 @@ and (max-device-width : 480px) {
     }
 
     footer {font-size: 80%;}
+
+    .cart-nav h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .product-header h5,
+    .cart-item-label {font-size: 1.5rem;}
+
+    .products-container ion-icon {font-size: 2rem;}
+
+    .cart-footer {
+        line-height: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .home {font-size: 3rem;}
 }
 
 @media only all 
@@ -239,18 +273,30 @@ and (max-width: 768px) {
     .main-footer {
         line-height: 2.5rem;
     }
-}
 
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) {
-/* Styles */
-}
+    .product,
+    .product-price,
+    .product-quantity,
+    .product-total,
+    .basket-total-title,
+    .basket-total {font-size: 250%;}
 
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
-/* Styles */
+    .cart-nav h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .product-header h5,
+    .cart-item-label {font-size: 1rem;}
+
+    .products-container ion-icon {font-size: 2rem;}
+
+    .cart-footer {
+        line-height: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .home {font-size: 2rem;}
 }
 
 /* iPads (portrait and landscape) ----------- */

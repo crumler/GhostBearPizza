@@ -90,12 +90,25 @@ section {
     padding: .5rem;
 }
 
+.nav__bar__ul a {
+    padding: .5rem 1.3rem;
+    margin: 0 .5rem;
+}
+
 .nav__bar__ul li a:link,
 .nav__bar__ul li a:visited {
     text-decoration: none;
     color: #2376bc;
     font-size: 3rem;
     padding: 0 2rem;
+}
+
+.nav__bar__ul li:hover {
+    border-bottom: 2px solid #2376bc;
+}
+
+.nav__bar__ul li:hover:last-child {
+    border: none;
 }
 
 .fixed-nav {
@@ -119,6 +132,7 @@ section {
     min-height: 100vh;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     /* flex-wrap: wrap; */
     font-size: 5rem;
     text-align: center;
@@ -129,7 +143,7 @@ section {
 }
 
 .header__company-name__content {
-    align-self: center;
+    /* align-self: center; */
 }
 
 .header__company-name__content a {font-size: 3rem;}
@@ -194,7 +208,7 @@ section {
 .btn-form-order {
     background-color: #2376bc;
     color: white;
-    padding: .5rem;
+    padding: 0.8rem;
     border-radius: 2rem;
     cursor: pointer;
 }
@@ -464,6 +478,10 @@ footer,
     line-height: 3.5rem;
     width: 100%;
     font-size: 2rem;
+}
+
+.main-footer ion-icon{
+    padding: 1rem 0.4rem;
 }
 
 footer a:link,
